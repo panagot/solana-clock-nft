@@ -12,16 +12,15 @@ function Clock() {
     }, []);
 
     const formatTime = (time) => {
-        let hours = time.getHours();
-        let minutes = time.getMinutes();
-        let seconds = time.getSeconds();
+    let hours = time.getHours();
+    let minutes = time.getMinutes();
 
-        hours = hours < 10 ? `0${hours}` : hours;
-        minutes = minutes < 10 ? `0${minutes}` : minutes;
-        seconds = seconds < 10 ? `0${seconds}` : seconds;
+    hours = hours < 10 ? `0${hours}` : hours;
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
 
-        return `${hours}:${minutes}`;
-    };
+    return `${hours}:${minutes}`;
+};
+
 
     return (
         <div style={{
